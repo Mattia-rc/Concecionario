@@ -1,0 +1,94 @@
+.contenedor{
+    height: 100vh;
+}
+
+.contenedor-filtrado{
+background-color: #005187;
+padding: 60px;
+}
+
+
+.contenedor-primer_filtrado{
+display: flex;
+justify-content: center;
+gap: 20px;
+padding-bottom: 20px;
+}
+
+
+.contenedor-filtrado_Segundo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-size{
+    width: 7vw;
+}
+
+
+
+button{
+    padding: 7px;
+    border: 5px;
+    background-color: #84b6f4;
+}
+
+input{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+
+input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.contenedor-cars{
+    padding-top: 3%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+.class-contenedor{
+    width: 100vw;
+    height: 26vh;
+    border: 1px solid #c4dafa;
+    border-radius: 15px;
+    box-shadow: 10px 10px 16px #c4dafa;
+    display: flex;
+    gap: 100px;
+    padding: 10px;
+}
+
+.div-imagen{
+width: 40%;
+}
+
+.imagen-style{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+}
+
+.div-style-other{
+    display: flex;
+    flex-direction: column;
+}
+
+h6{
+    padding-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.medida-boton{
+    width: 8vw;
+}

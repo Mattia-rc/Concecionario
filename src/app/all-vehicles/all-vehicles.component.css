@@ -1,0 +1,108 @@
+.contenedor-entero-vehiculos{
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    .contenedor-entero-vehiculos {
+    
+        height: 38pc;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        background-image: url(../../assets/Diseño\ sin\ título\ \(2\).png);
+        background-repeat: no-repeat;
+    
+    }
+    
+    .contenedor-textos {
+        position: absolute;
+        top: 109%; /* Ajusta la posición vertical */
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translate(-50%, -50%); /* Centra el botón horizontal y verticalmente */
+        z-index: 1; /* Asegura que el botón esté sobre la imagen */
+    }
+    
+    .button-search {
+        padding: 30px;
+        width: 600px;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        top: 50%; /* Ajusta para que la mitad del botón esté fuera del contenedor */
+        transform: translateY(-50%);
+        background-color: #004AAD;
+        color: white;
+        border: none;
+        box-shadow: 2px -3px 16px 0px black;
+    }
+    
+    
+    
+    
+    
+    .contenedor-contenidos{
+        margin-top: 14%;
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        margin-left: 7%;
+    
+    }
+    
+    .img-concecionaria{
+    width: 1000px;
+    border-radius: 5px;
+    }
+    
+    .titulo-h5{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    
+    .p-style{
+        font-family: 'Poppins', sans-serif;
+        width: 550px;
+    }
+    
+    .seccion-3{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    
+    .h5-style-seccion3{
+        text-align: center;
+        font-family: 'Poppins',sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    
+    .contenedor-seccion3{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    
+    .size{
+        font-size: 60px;
+    }
+    
+    .div-block{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .p-style-div{
+        font-family: 'Poppins', sans-serif;
+        font-size: 19px;
+    }
+    
+    .button-style{
+        padding: 20px;
+        background-color: transparent;
+        border: 2px solid #004AAD;
+        border-radius: 15px;
+    }

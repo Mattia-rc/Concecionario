@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+
+
+<div class="contenedor" *ngIf="vehiculo">
+  <div class="div-imagen">
+    <img class="imagen-style" [src]="'http://localhost:7000/' + vehiculo.images[0]" alt="Imagen del vehículo">
+    <div class="div-imagenes_complementarias">
+      <div *ngFor="let image of _albums; let i = index">
+        <img src="{{ image.src }}" (click)="abrirImagen(i)" class="thumbnail">
+      </div>
+    </div>
+    <div class="other-info-abajo_imagen">
+      <h5>Descripcion Ampliada</h5>
+      <div class="contenedor-info_abajoImagen">
+        <p>Impecable Toyota Etios Xls, año 2014 con 100.000 kms. Neumáticos semi nuevos. Muy cuidado.</p>
+        <p>ACEPTAMOS PERMUTAS // FINANCIAMOS 50% SOLO CON DNI</p>
+        <p>CONSULTAS --- 3415775555</p>
+        <p>NG AUTOMOTORES
+          Avellaneda 1991 / 2015 (esq. Ituzaingó)
+          Lunes a viernes de 10 a 18hs.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-informacion">
+    <h5>Información del Vehiculo</h5>
+    <div class="info-other">
+      <p>Marca: <span>{{vehiculo.marca}}</span> </p>
+      <p>Version: <span>{{vehiculo.modelo}}</span> </p>
+      <p>Transmicion: <span>{{vehiculo.transmicion}}</span> </p>
+      <p>Año: <span>{{vehiculo.ano}}</span> </p>
+      <p>Kilometraje: <span>{{vehiculo.kilometraje}}</span> </p>
+    </div>
+    <div class="div-precio_info"> 
+      <h5>Precio</h5>
+      <p>Precio: <span>${{vehiculo.precio}}</span> </p>
+    </div>
+    <div class="div-precio_info">
+      <h5>Datos de Contacto</h5>
+      <div class="contenido-contacto">
+        <a href="/contacto">
+          <button class="btn btn-warning"><i class="bi bi-house"></i> Comunicate</button>
+        </a>
+        <a href="https://wa.me/+5493413925965/?text=Quiero obtener mas informacion sobre: ">
+          <button class="btn btn-success"><i class="bi bi-whatsapp"></i> WhatsApp</button>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+

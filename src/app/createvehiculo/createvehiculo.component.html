@@ -1,0 +1,94 @@
+<div class="contenedor">
+    <div class="navbar">
+      <a href="/vista_Admin"><h6>Panel de Administrador</h6></a>
+      <div class="content-navbar">
+  
+        <div class="contenido-boton-sin">
+          <a href="/vista_viewAll">
+            <i class="bi bi-file-spreadsheet-fill style-icon"> Tablas de Vehiculos</i>
+          </a>
+        </div>
+        <div class="contenido-boton-con">
+          <a href="/vista_create_vehicle">
+            <i class="bi bi-car-front-fill style-icon-con"> Register Car</i>
+          </a>
+        </div>
+        <div class="contenido-boton-sin">
+          <a href="/registrar_ventas">
+            <i class="bi bi-check2-square style-icon"> Register Ventas</i>
+          </a>
+        </div>
+        <div class="contenedor-despacho">
+          <h6>
+            Account
+          </h6>
+          <div class="contenido-botones-perfiles">
+            <div class="contenido-boton-sin">
+              <a href="/perfil_admin">
+                <i class="bi bi-person style-icon"> Perfil</i>
+              </a>
+            </div>
+            <div class="contenido-boton-sin">
+              <a href="">
+                <i class="bi bi-dash-square style-icon"> Sign Out</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenido_contenedor">
+      <div class="contendor-informacion-admin">
+        <div class="user-login-panel">
+          <p class="p-style-admin">Bienvenido User :  {{usuario.email}} </p>
+      </div>
+      </div>
+      <div class="content-principal">
+        <h3>Registra tu Vehiculo</h3>
+      </div>
+  
+      <div class="contenedor-contenido">
+        <div>
+          <form (ngSubmit)="onSubmit(params)" #params="ngForm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Marca</label>
+              <input type="text" name="marca" ngModel class="form-control" id="marca" aria-describedby="marca">
+        
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Modelo</label>
+              <input type="text" name="modelo" ngModel class="form-control" id="modelo" aria-describedby="modelo">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Transmicion</label>
+              <input type="text" name="transmicion" ngModel class="form-control" id="transmicion">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Descripcion</label>
+              <input type="text" name="descripcion" ngModel class="form-control" id="descripcion">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Kilometros</label>
+              <input type="text" name="kilometraje" ngModel class="form-control" id="kilometros">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Precio</label>
+              <input type="number" name="precio" ngModel class="form-control" id="precio">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Año</label>
+              <input type="number" name="ano" ngModel class="form-control" id="ano">
+            </div>
+            <div class="mb-3">
+              <label for="images" class="form-label">Imágenes</label>
+              <input type="file" name="images" ngModel class="form-control" id="images" multiple>
+          </div>
+        
+            <button type="submit" class="btn btn-primary">Registrar vehiculos</button>
+          </form>
+        </div>
+        
+  
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,158 @@
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid black;
+    background-color: #40c0d1;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #000c0d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+/* OTRO CSS */
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+display: flex;
+justify-content: space-between;
+background-color: #000c0d;
+}
+
+
+.navbar{
+    width: 340px;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 12px rgb(75, 75, 75);
+    background-color: rgb(51, 51, 51);
+}
+
+h6{
+    text-align: center;
+    color: #43d993;
+    padding-top: 20px;
+    font-family: 'Poppins',sans-serif;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white; 
+}
+
+.content-navbar{
+    padding: 20px;
+}
+
+.contenido-boton-con{
+    background-color: #40c0d1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.style-icon-con{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+}
+
+.contenido-boton-sin{
+    border: 1px solid #40c0d1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.style-icon{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+
+}
+.contenedor-despacho{
+    margin-top: 80%;
+}
+
+.contenido-botones-perfiles{
+    padding-top: 17px;
+}
+
+.contenido_contenedor{
+    width: 100vw;
+    height: 100vh;
+}
+
+.contendor-informacion-admin{
+border-bottom: 1px solid white;
+padding-top: 22px;
+display: flex;
+justify-content: flex-end;
+}
+
+
+
+.user-login-panel{
+    padding-right: 15px;
+}
+
+.p-style-admin{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.content-principal{
+    margin: 60px;
+}
+
+.content-principal, h3{
+    font-family: 'Poppins', sans-serif;
+    color: #43d993;
+    font-weight: 600;
+}
+
+.contenedor-contenido, h5{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-edit{
+    color: aliceblue;
+}

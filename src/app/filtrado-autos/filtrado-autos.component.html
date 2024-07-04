@@ -1,0 +1,81 @@
+<app-navbar></app-navbar>
+
+<div class="contenedor">
+  <div class="contenedor-filtrado">
+    <div class="contenedor-primer_filtrado">
+
+      <!-- Marca Dropdown -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle button-size" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          {{ marca || 'Marca' }}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <!--             <a class="dropdown-item" href="#" (click)="setMarca(vehiculo.marca, $event)">{{ vehiculo.marca }}</a>
+ -->
+            <a class="dropdown-item" href="#" (click)="setMarca('Bmw', $event)">BMW</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Peugeot', $event)">Peugeot</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Toyota', $event)">Toyota</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Volkswagen', $event)">Volkswagen</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Fiat', $event)">Fiat</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Citroen', $event)">Citroen</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Honda', $event)">Honda</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Chevrolet', $event)">Chevrolet</a>
+            <a class="dropdown-item" href="#" (click)="setMarca('Alfa Romeo', $event)">Alfa Romeo</a>
+
+          </li>
+        </ul>
+      </div>
+
+      <input type="text" placeholder="Version" [(ngModel)]="version">
+
+      <!-- Transmisión Dropdown -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          {{ transmicion || 'Transmision' }}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+          <li>
+            <a class="dropdown-item" href="#" (click)="setTransmicion('Automatico', $event)">Automatico</a>
+            <a class="dropdown-item" href="#" (click)="setTransmicion('Manual', $event)">Manual</a>
+          </li>
+        </ul>
+      </div>
+
+      <input type="text" placeholder="Precio desde" [(ngModel)]="precioDesde">
+      <input type="text" placeholder="Precio hasta" [(ngModel)]="precioHasta">
+    </div>
+
+    <div class="contenedor-filtrado_Segundo">
+      <input type="text" placeholder="Km desde..." [(ngModel)]="kmDesde">
+      <input type="text" placeholder="Km hasta..." [(ngModel)]="kmHasta">
+      <input type="text" placeholder="Año desde..." [(ngModel)]="anoDesde">
+      <input type="text" placeholder="Año hasta..." [(ngModel)]="anoHasta">
+      <button class="btn class-btn" (click)="aplicarFiltros()">Buscar</button>
+    </div>
+  </div>
+  <div class="contenedor-cars" *ngFor="let vehicle of vehiculos">
+    <div class="class-contenedor">
+      <div class="div-imagen">
+        <img class="imagen-style" [src]="'http://localhost:7000/' + vehicle.images[0]" alt="Imagen del vehículo">
+      </div>
+      <div class="contenedor-informacion-vehiculo">
+        <h6>{{vehicle.descripcion}}</h6>
+        <div class="div-style-other">
+          <h6>Transmicion: {{vehicle.transmicion}}</h6>
+          <h6>Año: {{vehicle.ano}} </h6> 
+          <h6>Km: {{vehicle.kilometraje}} </h6>
+          <h6>Precio: ${{vehicle.precio}} </h6>
+        </div>
+        <div class="div-contenido-boton">
+       
+          <button class="btn medida-boton" [routerLink]="['/vehiculo_vista', vehicle._id]">Consultar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
