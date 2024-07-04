@@ -12,8 +12,7 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li>
-            <!--             <a class="dropdown-item" href="#" (click)="setMarca(vehiculo.marca, $event)">{{ vehiculo.marca }}</a>
- -->
+          
             <a class="dropdown-item" href="#" (click)="setMarca('Bmw', $event)">BMW</a>
             <a class="dropdown-item" href="#" (click)="setMarca('Peugeot', $event)">Peugeot</a>
             <a class="dropdown-item" href="#" (click)="setMarca('Toyota', $event)">Toyota</a>
@@ -56,7 +55,7 @@
       <button class="btn class-btn" (click)="aplicarFiltros()">Buscar</button>
     </div>
   </div>
-  <div class="contenedor-cars" *ngFor="let vehicle of vehiculos">
+<!--   <div class="contenedor-cars" *ngFor="let vehicle of vehiculos">
     <div class="class-contenedor">
       <div class="div-imagen">
         <img class="imagen-style" [src]="'http://localhost:7000/' + vehicle.images[0]" alt="Imagen del vehículo">
@@ -71,11 +70,40 @@
         </div>
         <div class="div-contenido-boton">
        
-          <button class="btn medida-boton" [routerLink]="['/vehiculo_vista', vehicle._id]">Consultar</button>
+          <button class="btn medida-boton" >Consultar</button>
         </div>
       </div>
 
     </div>
-  </div>
+  </div> -->
 
+
+  <div class="container contenedor-margen">
+    <div class="product-list">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 margin-card" *ngFor="let vehicle of vehiculos" [routerLink]="['/vehiculo_vista', vehicle._id]">
+          <div class="white-box">
+            <div class="wishlist-icon">
+            </div>
+            <div class="product-img">
+              <img class="imagen-style" [src]="'http://localhost:7000/' + vehicle.images[0]" alt="Imagen del vehículo">
+            </div>
+            <div class="product-bottom">
+              <div class="price">
+                <h5>US$ {{vehicle.precio}}</h5>
+              </div>
+              <div class="d-flex km-ano-style">
+                <p>{{vehicle.ano}}</p>|<p>{{vehicle.kilometraje}}</p> Km.
+              </div>
+              <div class="descripcion-auto">
+                <h6>{{vehicle.descripcion}}</h6>
+              </div>
+              <div class="ubicacion">
+                <p>Rosario, Santa Fé</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>

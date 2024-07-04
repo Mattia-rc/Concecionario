@@ -56,7 +56,6 @@ export class FiltradoAutosComponent implements OnInit {
       anoHasta: this.anoHasta
     };
     this.obtenerVehiculo(filtros);
-
   }
 
 
