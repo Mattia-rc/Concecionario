@@ -1,5 +1,10 @@
 
-  
+.navbar-inverse{
+  transition: 0.5s;
+  background-color:#84b6f4;
+  box-shadow: 0 0 30px rgba(1,75,87,.5);
+
+}
   .navbar{
     padding: 13px;
   }
@@ -32,4 +37,3 @@
 
 
 
-  

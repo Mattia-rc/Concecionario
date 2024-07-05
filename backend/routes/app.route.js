@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require('../model/user')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-
+const nodemailer = require('nodemailer');
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
 
@@ -253,5 +253,33 @@ router.delete('/vehiculo/:id', async (req, res) => {
     }
 });
 
+
+
+
+router.post('/send-email', (req, res) => {
+    const { name, email, message, apellido } = req.body;
+  
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail', // o cualquier otro servicio de correo
+      auth: {
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS 
+      }
+    });
+  
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_USER,
+      subject: `Nuevo mensaje de contacto de ${name}`,
+      text: `${message}\n\nApellido: ${apellido}`
+    };
+  
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return res.status(500).send(error.toString());
+      }
+      res.status(200).send('Correo enviado: ' + info.response);
+    });
+  });
 
 module.exports = router;

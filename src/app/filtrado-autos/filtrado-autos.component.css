@@ -91,6 +91,7 @@ h6{
 
 .medida-boton{
     width: 8vw;
+    
 }
 
 
@@ -111,7 +112,7 @@ h6{
 .white-box {
     border-radius: 15px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
-    background-color: #ffffff;
+    background-color: #feffff;
     transition: all 0.5s ease-in-out;
     position: relative;
     height: 476px;

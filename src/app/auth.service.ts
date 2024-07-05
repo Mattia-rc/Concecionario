@@ -58,6 +58,8 @@ private baseUrl = `http://localhost:7000/api`
     return this.http.get(`${this.baseUrl}/vehiculo/${id}`,{withCredentials:true})
   }
 
-
+  enviarCorreo(data:any):Observable<any>{
+    return this.http.post(`${this.baseUrl}/send-email`,data,{withCredentials:true})
+  }
 
 }
