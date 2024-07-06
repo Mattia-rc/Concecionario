@@ -1,53 +1,53 @@
-.contenedor{
+.contenedor {
     height: 100vh;
 }
 
-.contenedor-filtrado{
-background-color: #005187;
-padding: 60px;
+.contenedor-filtrado {
+    background-color: #005187;
+    padding: 60px;
 }
 
 
-.contenedor-primer_filtrado{
-display: flex;
-justify-content: center;
-gap: 20px;
-padding-bottom: 20px;
+.contenedor-primer_filtrado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 
-.contenedor-filtrado_Segundo{
+.contenedor-filtrado_Segundo {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.button-size{
+.button-size {
     width: 7vw;
 }
 
 
 
-button{
+button {
     padding: 7px;
     border: 5px;
     background-color: #84b6f4;
 }
 
-input{
+input {
     padding: 7px;
     border-radius: 5px;
     border: none;
 }
 
-input::placeholder{
+input::placeholder {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 15px;
 }
 
 /* PRUEBA OTRO CSS */
-.contenedor-cars{
+.contenedor-cars {
     padding-top: 3%;
     width: 49%;
     display: flex;
@@ -56,7 +56,7 @@ input::placeholder{
     padding-bottom: 5%;
 }
 
-.class-contenedor{
+.class-contenedor {
     width: 100vw;
     height: 26vh;
     border: 1px solid #c4dafa;
@@ -67,44 +67,45 @@ input::placeholder{
     padding: 10px;
 }
 
-.div-imagen{
-width: 40%;
+.div-imagen {
+    width: 40%;
 }
 
-.imagen-style{
-width: 100%;
-height: 100%;
-border-radius: 10px;
+.imagen-style {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
-.div-style-other{
+.div-style-other {
     display: flex;
     flex-direction: column;
 }
 
-h6{
+h6 {
     padding-bottom: 8px;
     font-family: 'Poppins', sans-serif;
 }
 
 
 
-.medida-boton{
+.medida-boton {
     width: 8vw;
-    
+
 }
 
 
 /* FIN PRUEBA DE OOTRO CSS */
-.contenedor-margen{
+.contenedor-margen {
     margin-top: 100px;
 }
-.margin-card{
+
+.margin-card {
     margin-bottom: 60px;
     cursor: pointer;
 }
 
-.margin-card:hover{
+.margin-card:hover {
     transform: scale(1.01);
     transition: 0.5s;
 }
@@ -118,18 +119,22 @@ h6{
     height: 476px;
     box-shadow: 10px 10px 16px #c4dafa;
 }
+
 .wishlist-icon {
     position: absolute;
     right: 12px;
     top: 10px;
 }
+
 .wishlist-icon img {
     width: 20px;
     height: 20px;
 }
+
 .product-img {
     min-height: 135px;
 }
+
 .product-img img {
     max-width: 100%;
     max-height: 300px;
@@ -138,20 +143,237 @@ h6{
 }
 
 
-.product-bottom{
+.product-bottom {
     padding: 30px;
 }
 
-.price, h5{
+.price,
+h5 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
 }
 
-.km-ano-style, p{
+.km-ano-style,
+p {
     font-family: 'Poppins', sans-serif;
 }
 
-.descripcion-auto, h6{
+.descripcion-auto,
+h6 {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+/* @media only screen and (min-width: 1398px) {
+
+.imagen-style{
+    width: 100%;
+    height: 290px;
+}
+    
+.price, h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+}
+.descripcion-auto, h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+} */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .imagen-style {
+        width: 100%;
+        height: 290px;
+    }
+
+    .price,
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .descripcion-auto,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .imagen-style {
+        width: 100%;
+        height: 220px;
+    }
+
+    .price,
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .descripcion-auto,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+
+    .white-box {
+        height: 405px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .imagen-style {
+        width: 100%;
+        height: 180px;
+    }
+
+    .price,
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .descripcion-auto,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+    }
+
+    .white-box {
+        height: 375px;
+    }
+
+    .contenedor-primer_filtrado {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .contenedor-filtrado_Segundo{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-size{
+        width: 100%;
+    }
+    .button-size-2{
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .imagen-style {
+        width: 100%;
+        height: 180px;
+    }
+
+    .price,
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .descripcion-auto,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+    }
+
+    .white-box {
+        height: 375px;
+    }
+    .contenedor-primer_filtrado {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .contenedor-filtrado_Segundo{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-size{
+        width: 100%;
+    }
+    .button-size-2{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 250px) and (max-width: 575px){
+    .imagen-style {
+        width: 100%;
+        height: 280px;
+    }
+
+    .price,
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .descripcion-auto,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+
+    .white-box {
+        height: 495px;
+    }
+    .contenedor-primer_filtrado {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .contenedor-filtrado_Segundo{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-size{
+        width: 100%;
+    }
+    .button-size-2{
+        width: 100%;
+    }
 }
