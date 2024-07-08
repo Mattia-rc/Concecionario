@@ -1,108 +1,336 @@
-.contenedor-entero-vehiculos{
+.contenedor-entero-vehiculos {
     display: flex;
     justify-content: center;
-    
-    }
-    
-    .contenedor-entero-vehiculos {
-    
-        height: 38pc;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: flex-start;
-        background-image: url(../../assets/Diseño\ sin\ título\ \(2\).png);
-        background-repeat: no-repeat;
-    
-    }
-    
-    .contenedor-textos {
-        position: absolute;
-        top: 109%; /* Ajusta la posición vertical */
-        left: 50%; /* Ajusta la posición horizontal */
-        transform: translate(-50%, -50%); /* Centra el botón horizontal y verticalmente */
-        z-index: 1; /* Asegura que el botón esté sobre la imagen */
-    }
-    
-    .button-search {
-        padding: 30px;
-        width: 600px;
-        border-radius: 20px;
-        font-family: 'Poppins', sans-serif;
-        position: relative;
-        top: 50%; /* Ajusta para que la mitad del botón esté fuera del contenedor */
-        transform: translateY(-50%);
-        background-color: #004AAD;
-        color: white;
-        border: none;
-        box-shadow: 2px -3px 16px 0px black;
-    }
-    
-    
-    
-    
-    
-    .contenedor-contenidos{
-        margin-top: 14%;
-        display: flex;
-        gap: 100px;
-        align-items: center;
-        margin-left: 7%;
-    
-    }
-    
-    .img-concecionaria{
-    width: 1000px;
+
+}
+
+
+.contenedor-entero-vehiculos {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+
+
+
+.texto-box {
+    padding-top: 9%;
+    padding-left: 3%;
+}
+
+.estilo-letra-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.estilo-letra-h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.div-ver_mas {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ver_mas-style {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #004AAD;
+}
+
+.contenedor-textos {
+    position: absolute;
+    top: 109%;
+    left: 50%;
+    /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%);
+    /* Centra el botón horizontal y verticalmente */
+    z-index: 1;
+    /* Asegura que el botón esté sobre la imagen */
+}
+
+.button-search {
+    padding: 30px;
+    width: 600px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 50%;
+    /* Ajusta para que la mitad del botón esté fuera del contenedor */
+    transform: translateY(-50%);
+    background-color: #004AAD;
+    color: white;
+    border: none;
+    box-shadow: 2px -3px 16px 0px black;
+}
+
+
+
+
+
+#concecionario{
+    margin-top: 10%;
+}
+
+.img-concecionaria {
+    width: 800px;
     border-radius: 5px;
-    }
+}
+
+.titulo-h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.p-style {
+    font-family: 'Poppins', sans-serif;
     
-    .titulo-h5{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 40px;
+}
+
+.seccion-3 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.h5-style-seccion3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contenedor-seccion3 {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.size {
+    font-size: 60px;
+}
+
+.div-block {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.p-style-div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+.button-style {
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #004AAD;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* Responsive */
+
+
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .texto-box{
+        padding-top: 10%;
     }
-    
-    .p-style{
-        font-family: 'Poppins', sans-serif;
-        width: 550px;
-    }
-    
-    .seccion-3{
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-    
-    .h5-style-seccion3{
-        text-align: center;
-        font-family: 'Poppins',sans-serif;
-        font-size: 40px;
-        font-weight: 500;
-    }
-    
-    .contenedor-seccion3{
-        width: 70%;
-        margin: 0 auto;
-        padding-top: 40px;
-    }
-    
-    .size{
-        font-size: 60px;
-    }
-    
-    .div-block{
+
+    .contenedor-contenidos {
         display: flex;
-        flex-direction: column;
-        gap: 35px;
+        justify-content: space-around;
     }
+
+    .img-concecionaria {
+        width: 530px;
+        border-radius: 10px;
+    }
+    .p-style{
+        width: 89%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contenedor-entero-vehiculos{
+        padding-top: 14%;
+    }
+    .estilo-letra-h1{
+        font-size: 30px;
+    }
+    .estilo-letra-h5{
+        font-size: 15px;
+    }
+    .titulo-h5{
+        font-size: 36px;
+    }
+    .texto-box{
+        padding-top: 15%;
+    }
+
+    .contenedor-contenidos {
+        display: flex;
+        justify-content: space-around;
     
+    }
+
+    .img-concecionaria {
+        width: 493px;
+        border-radius: 10px;
+    }
+    .p-style{
+        width: 89%;
+    }
+    .size-img{
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contenedor-entero-vehiculos{
+        padding-top: 20%;
+    }
+    .estilo-letra-h1{
+        font-size: 30px;
+    }
+    .estilo-letra-h5{
+        font-size: 15px;
+    }
+    .titulo-h5{
+        font-size: 26px;
+    }
+    .texto-box{
+        padding-top: 15%;
+    }
+
+    .contenedor-contenidos {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+
+    .img-concecionaria {
+        width: 380px;
+        border-radius: 10px;
+    }
+    .p-style{
+        width: 89%;
+        font-size: 14px;
+    }
+    .size-img{
+        width: 446px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .contenedor-entero-vehiculos{
+        padding-top: 30%;
+    }
+    .estilo-letra-h1{
+        font-size: 21px;
+    }
+    .estilo-letra-h5{
+        font-size: 14px;
+    }
+    .titulo-h5{
+        font-size: 26px;
+    }
+    .texto-box{
+        padding-top: 15%;
+    }
+
+    .contenedor-contenidos {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+
+    .img-concecionaria {
+        width: 230px;
+        border-radius: 10px;
+    }
+    .p-style{
+        width: 89%;
+        font-size: 14px;
+    }
+    .size-img{
+        width: 344px;
+    }
+    .div-block{
+        align-items: center;
+    }
     .p-style-div{
-        font-family: 'Poppins', sans-serif;
-        font-size: 19px;
+        font-size: 13px;
     }
-    
-    .button-style{
-        padding: 20px;
-        background-color: transparent;
-        border: 2px solid #004AAD;
-        border-radius: 15px;
+}
+
+
+@media (min-width: 250px) and (max-width: 575px) {
+    .contenedor-entero-vehiculos{
+        display: block;
+        padding-left: 14%;
+        padding-top: 146px;
     }
+    .estilo-letra-h1{
+        font-size: 21px;
+    }
+    .estilo-letra-h5{
+        font-size: 14px;
+    }
+    .titulo-h5{
+        font-size: 26px;
+    }
+    .texto-box{
+        padding-top: 15%;
+    }
+
+    .contenedor-contenidos {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 18%;
+    }
+    .div-ver_mas{
+        padding-left: 26%;
+    }
+    .img-concecionaria {
+        width: 250px;
+        border-radius: 10px;
+    }
+    .p-style{
+        width: 89%;
+        font-size: 9px;
+    }
+    .size-img{
+        width: 230px;
+    }
+    .div-block{
+        align-items: center;
+    }
+    .p-style-div{
+        font-size: 13px;
+    }
+    .size{
+        font-size: 35px;
+    }
+    .contenedor-seccion3{
+        width: 93%;
+    }
+
+}
